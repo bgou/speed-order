@@ -1,0 +1,22 @@
+{
+  "name": "speed-order",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgou/speed-order.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgou/speed-order/issues"
+  },
+  "homepage": "https://github.com/bgou/speed-order#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
