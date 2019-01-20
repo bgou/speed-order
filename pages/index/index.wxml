@@ -13,13 +13,13 @@
           <text>订餐人姓名</text>
         </view>
         <view class="form-input">
-          <input type="text" value="{{userInfo.nickName}}" placeholder="Logging in"></input>
+          <input type="text" value="{{userInfo.nickName}}" placeholder="急急如律令 你叫。。。"></input>
         </view>
       </view>
 
       <view class="form-line">
         <view class="form-label">
-          <view class="center-aligned"><text>取餐地点</text></view>
+          取餐地点
         </view>
         <view class="form-input">
           <picker bindchange="bindDeliveryLocationChange" value="{{selectedLocationIndex}}" range="{{deliveryLocations}}">
