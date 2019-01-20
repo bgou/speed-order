@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  padding: 10rpx 40rpx;
+  box-sizing: border-box;
+} 
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}

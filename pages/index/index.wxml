@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<scroll-view class="container">
+  <view class="banner">
+    <view>
+      <image mode="aspectFit" src="https://www.jotform.com/uploads/deliciousgo/form_files/%E7%BE%8E%E9%A3%9FGO1236.5b3b06d44ef7a0.99852465.jpg"></image>
+    </view>
+  </view>
+
+  <view class="order-form">
+    <form>
+      <view class="form-line">
+        <view class="form-label">
+          <text>订餐人姓名</text>
+        </view>
+        <view class="form-input">
+          <input type="text" value="{{userInfo.nickName}}" placeholder="Logging in"></input>
+        </view>
+      </view>
+
+      <view class="form-line">
+        <view class="form-label">
+          <view class="center-aligned"><text>取餐地点</text></view>
+        </view>
+        <view class="form-input">
+          <picker bindchange="bindDeliveryLocationChange" value="{{selectedLocationIndex}}" range="{{deliveryLocations}}">
+            <button>{{deliveryLocations[selectedLocationIndex]}}</button>
+        </picker>
+        </view>
+      </view>      
+    </form>
+  </view>
+
+</scroll-view>
