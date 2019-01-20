@@ -25,7 +25,46 @@ Page({
       "Rufus",
       "自取",
       "NP5"
+    ],
+    menuData: [
+      {
+        "name": "葱爆牛腱",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/A49C2D4E-BE0B-4B6B-B95D-0217A78B66B7.5c40391f006a54.62973044.jpeg"
+      },
+      {
+        "name": "葱爆牛腱糙米便当",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/A49C2D4E-BE0B-4B6B-B95D-0217A78B66B7.5c40391f006a54.62973044.jpeg"
+      },
+      {
+        "name": "黄豆焖猪脚便当",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/29DA808A-46FA-4815-9270-63965E41FE59.5c40394a72ffc0.15907439.jpeg"
+      },
+      {
+        "name": "黄豆焖猪脚便当 糙米",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/29DA808A-46FA-4815-9270-63965E41FE59.5c40394a72ffc0.15907439.jpeg"
+      },
+      {
+        "name": "油焖大虾",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/2EB174C1-EDC0-416D-996B-114F5BBAFA6E.5c40e23f3f4bc8.37492841.jpeg"
+      },
+      {
+        "name": "油焖大虾糙米",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/8398676B-0632-4D8B-B36B-CEDF974AD0B6.5c40e25eeb4c87.22021277.jpeg"
+      },
+      {
+        "name": "芋儿鸡便当",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/B666BA4D-718A-4491-B861-2DDF45A00F0E.5c40e29dcc4be8.76583615.jpeg"
+      },
+      {
+        "name": "芋儿鸡糙米",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/B1B1CBCF-56EE-44C1-9BDC-605842AE9CF6.5c40e2b52c1f26.02321027.jpeg"
+      },
+      {
+        "name": "卤肉饭（不包括在定3次送free饮品里哦）",
+        "img": "https://www.jotform.com/uploads/foodtimes/form_files/3C6B691B-6044-43D8-B08C-2FA287C4F173.5bd55bb4cbcb27.96620655.jpeg"
+      }
     ]
+    
   },
   bindDeliveryLocationChange: function(e) {
     this.setData({selectedLocationIndex: e.detail.value})

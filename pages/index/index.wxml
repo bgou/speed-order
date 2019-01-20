@@ -26,8 +26,22 @@
             <button>{{deliveryLocations[selectedLocationIndex]}}</button>
         </picker>
         </view>
-      </view>      
+      </view>
+
+
+      <view wx:for="{{menuData}}" wx:key="{{item.name}}">
+        <template is="menu" data="{{...item}}"></template>
+      </view>
+
+      
     </form>
   </view>
 
 </scroll-view>
+
+<template name="menu">
+  <view>
+    <image src="{{img}}"></image>
+    <text>{{name}}</text>
+  </view>
+</template>
