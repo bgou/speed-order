@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<import src="order-button.wxml" />
+<import src="order-count.wxml" />
+
 <scroll-view class="container">
   <view class="banner">
     <view>
@@ -47,7 +48,7 @@
 
         <cover-view class="cover-view-top">
           <cover-view class="order-count">
-            <template is="order-button" data="{{count}}">
+            <template is="order-count" data="{{count}}">
             </template>
           </cover-view>
         </cover-view>
@@ -55,8 +56,8 @@
         <cover-view class="cover-view-bottom">
           <cover-view class="cover-view-left">{{name}}</cover-view>
           <cover-view class="cover-view-right">
-            <button class="add-sub-control"><text>-</text></button>
-            <button class="add-sub-control"><text>+</text></button>
+            <button class="add-sub-control" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
+            <button class="add-sub-control" bindtap="addOrder" data-id="{{name}}"><text>+</text></button>
           </cover-view>
         </cover-view>
 

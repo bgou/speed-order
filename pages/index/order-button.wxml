@@ -1,6 +1,0 @@
-
-<template name="order-button">
-  <button size="mini" plain>
-    {{count}}
-  </button>
-</template>

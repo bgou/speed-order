@@ -113,5 +113,21 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  addOrder: function(e) {
+    const name = e.target.dataset.id
+    const menuData=[...this.data.menuData]
+    const item = menuData.find(value=>value.name===name)
+    item.count++;
+    this.setData({menuData})
+  },
+  subtractOrder: function(e) {
+    const name = e.target.dataset.id
+    const menuData=[...this.data.menuData]
+    const item = menuData.find(value=>value.name===name)
+    if (item.count > 0) {
+      item.count--;
+      this.setData({menuData})
+    }
   }
 })
