@@ -48,10 +48,31 @@
   justify-content: center;
 }
 
+.menu-container {
+  width: 100%;
+  height: 480rpx;
+  display: flex;
+  justify-content: center;
+}
+
 .cover-view {
   position: relative;
+  margin-top: -480rpx;
+  height: 480rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover-view-top {
+  display: flex;
+  flex-direction: row-reverse;
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+}
+
+.cover-view-bottom {
   height: 50px;
-  margin-top: -50px;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -59,12 +80,9 @@
   color: white;
 }
 
+
 .cover-view-left {
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  flex-wrap: wrap; */
   align-items: center;
   padding-left: 16rpx;
   width: 400rpx;
@@ -86,4 +104,9 @@
 .add-sub-control > text{
   font-size: 32px;
   line-height: 70rpx;
+}
+
+.order-count {
+  margin-top: 16rpx;
+  margin-right: 16rpx;
 }

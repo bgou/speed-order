@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="order-button.wxml" />
 <scroll-view class="container">
   <view class="banner">
     <view>
@@ -40,15 +41,25 @@
 </scroll-view>
 
 <template name="menu">
-  <view>
-    
-    <image src="{{img}}">
+  <view class="menu-container" >
+    <image class="menu-item" src="{{img}}">
       <cover-view class="cover-view">
-        <cover-view class="cover-view-left">{{name}}</cover-view>
-        <cover-view class="cover-view-right">
-          <button class="add-sub-control"><text>-</text></button>
-          <button class="add-sub-control"><text>+</text></button>
+
+        <cover-view class="cover-view-top">
+          <cover-view class="order-count">
+            <template is="order-button" data="{{count}}">
+            </template>
+          </cover-view>
         </cover-view>
+        
+        <cover-view class="cover-view-bottom">
+          <cover-view class="cover-view-left">{{name}}</cover-view>
+          <cover-view class="cover-view-right">
+            <button class="add-sub-control"><text>-</text></button>
+            <button class="add-sub-control"><text>+</text></button>
+          </cover-view>
+        </cover-view>
+
       </cover-view>
     </image>
   </view>
