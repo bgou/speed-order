@@ -51,6 +51,7 @@
 .menu-container {
   width: 100%;
   height: 480rpx;
+  margin-bottom: 32rpx;
   display: flex;
   justify-content: center;
 }
@@ -72,9 +73,8 @@
 }
 
 .cover-view-bottom {
-  height: 50px;
+  height: 100rpx;
   display: flex;
-  text-align: center;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -84,31 +84,36 @@
 .cover-view-left {
   display: flex;
   align-items: center;
-  padding-left: 16rpx;
-  width: 400rpx;
+  padding-left: 32rpx;
+  /* width: 400rpx; */
 }
 
 
 .cover-view-right {
-  margin-right: 16rpx;
+  width: 352rpx;
+  margin-right: 32rpx;
+  display:flex;
+  justify-content: flex-end;
 }
 
 
 .add-sub-control {
-  height: 40px;
+  width: 120rpx;
+  height: 80rpx;
   margin: 8rpx;
   display: inline-block;
   background-color: rgba(245, 234, 234, 0.61);
 }
 
-.add-sub-control > text{
+.add-sub-control-text{
   font-size: 32px;
-  line-height: 70rpx;
+  /* line-height: 70rpx; */
+  color: white;
 }
 
 .order-count {
-  margin-top: 16rpx;
-  margin-right: 16rpx;
+  margin-top: 32rpx;
+  margin-right: 32rpx;
 }
 
 .disabled-button {

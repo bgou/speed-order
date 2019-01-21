@@ -115,16 +115,18 @@ Page({
     })
   },
   addOrder: function(e) {
-    const name = e.target.dataset.id
+    // const name = e.target.dataset.id
+    // const item = this.data.menuData.find(value=>value.name===name)
     const menuData=[...this.data.menuData]
-    const item = menuData.find(value=>value.name===name)
+    const idx = e.target.dataset.id
+    const item = menuData[idx]
     item.count++;
     this.setData({menuData})
   },
   subtractOrder: function(e) {
-    const name = e.target.dataset.id
     const menuData=[...this.data.menuData]
-    const item = menuData.find(value=>value.name===name)
+    const idx = e.target.dataset.id
+    const item = menuData[idx]
     if (item.count > 0) {
       item.count--;
       this.setData({menuData})

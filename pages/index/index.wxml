@@ -26,23 +26,22 @@
         <view class="form-input">
           <picker bindchange="bindDeliveryLocationChange" value="{{selectedLocationIndex}}" range="{{deliveryLocations}}">
             <button>{{deliveryLocations[selectedLocationIndex]}}</button>
-        </picker>
+          </picker>
         </view>
       </view>
 
 
-      <view wx:for="{{menuData}}" wx:key="{{item.name}}">
-        <template is="menu" data="{{...item}}"></template>
+      <view wx:for="{{menuData}}" wx:for-index="idx" wx:key="name">
+        <template is="menu" data="{{idx, ...item}}"></template>
       </view>
 
-      
     </form>
   </view>
 
 </scroll-view>
 
 <template name="menu">
-  <view class="menu-container" >
+  <view class="menu-container">
     <image class="menu-item" src="{{img}}">
       <cover-view class="cover-view">
 
@@ -52,13 +51,13 @@
             </template>
           </cover-view>
         </cover-view>
-        
+
         <cover-view class="cover-view-bottom">
           <cover-view class="cover-view-left">{{name}}</cover-view>
           <cover-view class="cover-view-right">
-            <button wx:if="{{count === 0}}" class="add-sub-control disabled-button" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
-            <button wx:else class="add-sub-control" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
-            <button class="add-sub-control" bindtap="addOrder" data-id="{{name}}"><text>+</text></button>
+            <button wx:if="{{count === 0}}" class="add-sub-control disabled-button" bindtap="subtractOrder" data-id="{{idx}}">-</button>
+            <button wx:else class="add-sub-control" bindtap="subtractOrder" data-id="{{idx}}">-</button>
+            <button class="add-sub-control" bindtap="addOrder" data-id="{{idx}}">+</button>
           </cover-view>
         </cover-view>
 
