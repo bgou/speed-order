@@ -41,7 +41,15 @@
 
 <template name="menu">
   <view>
-    <image src="{{img}}"></image>
-    <text>{{name}}</text>
+    
+    <image src="{{img}}">
+      <cover-view class="cover-view">
+        <cover-view class="cover-view-left">{{name}}</cover-view>
+        <cover-view class="cover-view-right">
+          <button class="add-sub-control"><text>-</text></button>
+          <button class="add-sub-control"><text>+</text></button>
+        </cover-view>
+      </cover-view>
+    </image>
   </view>
 </template>
