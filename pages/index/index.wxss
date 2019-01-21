@@ -98,7 +98,7 @@
   height: 40px;
   margin: 8rpx;
   display: inline-block;
-  background-color: rgba(245, 234, 234, 0.61)
+  background-color: rgba(245, 234, 234, 0.61);
 }
 
 .add-sub-control > text{
@@ -109,4 +109,8 @@
 .order-count {
   margin-top: 16rpx;
   margin-right: 16rpx;
+}
+
+.disabled-button {
+  background-color: rgba(0, 0, 0, 0.3);
 }

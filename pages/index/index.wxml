@@ -56,7 +56,8 @@
         <cover-view class="cover-view-bottom">
           <cover-view class="cover-view-left">{{name}}</cover-view>
           <cover-view class="cover-view-right">
-            <button class="add-sub-control" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
+            <button wx:if="{{count === 0}}" class="add-sub-control disabled-button" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
+            <button wx:else class="add-sub-control" bindtap="subtractOrder" data-id="{{name}}"><text>-</text></button>
             <button class="add-sub-control" bindtap="addOrder" data-id="{{name}}"><text>+</text></button>
           </cover-view>
         </cover-view>
